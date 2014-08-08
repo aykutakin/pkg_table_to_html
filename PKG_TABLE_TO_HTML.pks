@@ -5,5 +5,8 @@ CREATE OR REPLACE PACKAGE PKG_TABLE_TO_HTML AS
                          
   FUNCTION SQL_TO_HTML(v_SqlStatement VARCHAR2,
                        clob_Message   CLOB DEFAULT '') RETURN CLOB;
-                       
+
+  FUNCTION ROW_TO_PIE_CHART_HTML(v_SqlStatement VARCHAR2,
+                                 clob_Message   CLOB DEFAULT '') RETURN CLOB;
+
 END;
